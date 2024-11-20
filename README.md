@@ -1,11 +1,7 @@
 # OpenPedCan-analysis
 [![DOI](https://zenodo.org/badge/358689512.svg)](https://zenodo.org/badge/latestdoi/358689512)
 
-**This repository has been archived as README only because the project is now maintained by the [Rokita Lab](https://rokitalab.com/) at [Children's National Hospital](https://www.childrensnational.org/). Please visit https://github.com/rokitalab/OpenPedCan-Project for future updates.**
-
 The Open Pediatric Cancer (OpenPedCan) project is an open analysis effort that harmonizes pediatric cancer data from multiple sources, performs downstream cancer analyses on these data and provides them on PedcBioPortal and the [NCI's Molecular Targets Platform (MTP)](https://moleculartargets.ccdi.cancer.gov/.
-Past project maintainers included scientists at the Center for Data-Driven Discovery in Biomedicine and the Department of Biomedical and Health Informatics at CHOP.
-We invite researchers to join OpenPedCan to help rigorously characterize the genomic landscape of these diseases to enable more rapid discovery of additional mechanisms contributing to the pathogenesis of pediatric cancer and overall accelerate clinical translation on behalf of patients.
 For detailed methods, please see our [methods repository](https://github.com/rokitalab/OpenPedCan-manuscript).
 
 To cite this work, please note the data release used in your work and cite the following:
@@ -620,11 +616,11 @@ Environment variables without this prefix are not passed.
 [**OpenPBTA**](https://github.com/AlexsLemonade/OpenPBTA-analysis) was funded through the [Children's Brain Tumor Network (CBTN)](https://cbtn.org/) by the following donors who provided leadership level support: CBTN Executive Council members, Brain Tumor Board of Visitors, Children's Brain Tumor Foundation, Easie Family Foundation, Kortney Rose Foundation, Lilabean Foundation, Minnick Family Charitable Fund, Perricelli Family, Psalm 103 Foundation, and Swifty Foundation. 
 Additional funding was provided by Alex’s Lemonade Stand Foundation (ALSF) Childhood Cancer Data Lab, ALSF Young Investigator Award, ALSF Catalyst Award, ALSF Catalyst Award, ALSF CCDL Postdoctoral Training Grant, Children’s Hospital of Philadelphia Division of Neurosurgery, Australian Government, Department of Education, St. Anna Kinderkrebsforschung, Austria, the Mildred Scheel Early Career Center Dresden P2, funded by the German Cancer Aid, NIH Grants 3P30 CA016520-44S5, U2C HL138346-03, U24 CA220457-03, K12GM081259, R03-CA23036, NIH Contract Nos. HHSN261200800001E and 75N91019D00024, Task Order No. 75N91020F00003, and the Intramural Research Program of the Division of Cancer Epidemiology and Genetics of the National Cancer Institute.
 
-Inaugural funding for **OpenPedCan** was provided in part by [NCI's Childhood Cancer Data Initiative](https://www.cancer.gov/research/areas/childhood/childhood-cancer-data-initiative) through NIH Task Order No. 75N91020F00003 and is currently funded by the CBTN and the Children’s Hospital of Philadelphia Division of Neurosurgery.
+Inaugural funding for **OpenPedCan** was provided in part by [NCI's Childhood Cancer Data Initiative](https://www.cancer.gov/research/areas/childhood/childhood-cancer-data-initiative) through NIH Task Order No. 75N91020F00003, the CBTN, and the Children’s Hospital of Philadelphia Division of Neurosurgery.
 
 
 ## Contact
-Please submit an issue with any questions, bugs, or feature requests or contact [Dr. Jo Lynne Rokita](@jharenza) with any questions: rokita@chop.edu.
+Please submit an issue with any questions, bugs, or feature requests.
 
 
 

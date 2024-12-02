@@ -2,7 +2,7 @@
 [![DOI](https://zenodo.org/badge/358689512.svg)](https://zenodo.org/badge/latestdoi/358689512)
 
 The Open Pediatric Cancer (OpenPedCan) project is an open analysis effort that harmonizes pediatric cancer data from multiple sources, performs downstream cancer analyses on these data and provides them on PedcBioPortal and the [NCI's Molecular Targets Platform (MTP)](https://moleculartargets.ccdi.cancer.gov/.
-For detailed methods, please see our [methods repository](https://github.com/rokitalab/OpenPedCan-manuscript).
+For detailed methods accompanying this repository, please see reference number 2 below.
 
 To cite this work, please note the data release used in your work and cite the following:
 1. OpenPBTA:

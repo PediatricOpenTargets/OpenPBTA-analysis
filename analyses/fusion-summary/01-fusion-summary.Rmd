@@ -144,7 +144,8 @@ ependGenes <- c(
 embryFuses <- c(
   "CIC--NUTM1",
   "MN1--BEND2",
-  "MN1--CXXC5"
+  "MN1--CXXC5",
+  "EWSR1--PLAGL1"
 )
 embryGenes <- c(
   "FOXR2",

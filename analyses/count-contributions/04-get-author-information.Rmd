@@ -1,5 +1,5 @@
 ---
-title: "Creating a TSV of author information for AlexsLemonade/OpenPBTA-manuscript"
+title: "Creating a TSV of author information for OpenPedCan-manuscript"
 output: 
   html_notebook:
     toc: true

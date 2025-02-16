@@ -8,7 +8,7 @@ author: "Jaclyn Taroni for ALSF CCDL, Updated by Jo Lynne Rokita D3b"
 date: "2022, 2024"
 ---
 
-This notebook updates the current [manuscript metadata](https://github.com/d3b-center/OpenPedCan-manuscript/blob/main/content/metadata.yaml) such that the authors are ordered in the following way:
+This notebook updates the current [manuscript metadata](https://github.com/rokitalab/OpenPedCan-manuscript/blob/main/content/metadata.yaml) such that the authors are ordered in the following way:
 
 * The first 4 and last 2 authors, are pinned to reflect scholarship and contributor roles that are not captured in the Git history of this repository (e.g., substantive analytical code review, conceptualization, supervision, or project administration).
 * Manuscript authors that have contributed to the code base for the analysis repository -- specifically the number of analysis modules that were included in the paper that a manuscript author has contributed to -- are then ordered from the second position on in decreasing order.
@@ -33,7 +33,7 @@ set.seed(2022)
 Grab the metadata YAML file from the `master` branch of the repository and save to the directory this notebook is in.
 
 ```{r}
-manuscript_metadata_url <- "https://raw.githubusercontent.com/d3b-center/OpenPedCan-manuscript/main/content/metadata.yaml"
+manuscript_metadata_url <- "https://raw.githubusercontent.com/rokitalab/OpenPedCan-manuscript/main/content/metadata.yaml"
 
 download.file(manuscript_metadata_url, "metadata.yaml",)
 ```

@@ -2,10 +2,6 @@ FROM rocker/tidyverse:4.4.0
 LABEL maintainer="jrokita@childrensnational.org"
 WORKDIR /rocker-build/
 
-ARG github_pat=$GITHUB_PAT
-
-ENV GITHUB_PAT=$github_pat
-
 # Avoid warnings by switching to noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
 

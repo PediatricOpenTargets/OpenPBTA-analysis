@@ -315,16 +315,12 @@ WORKDIR /home/rstudio/
 # GISTIC installation
 RUN mkdir -p gistic_install && \
     cd gistic_install && \
-    # wget -q ftp://ftp.broadinstitute.org/pub/GISTIC2.0/GISTIC_2_0_23.tar.gz && \
     wget -q https://anaconda.org/HCC/gistic2/2.0.23/download/linux-64/gistic2-2.0.23-0.tar.bz2 && \
     tar jxf gistic2-2.0.23-0.tar.bz2 && \
     rm -f gistic2-2.0.23-0.tar.bz2 && \
-    tar zxf GISTIC_2_0_23.tar.gz && \
-    rm -f GISTIC_2_0_23.tar.gz && \
     rm -rf MCR_Installer && \
     chown -R rstudio:rstudio /home/rstudio/gistic_install && \
     chmod 755 /home/rstudio/gistic_install
-WORKDIR /rocker-build/
 
 WORKDIR /home/rstudio/
 # AWS CLI installation

@@ -34,15 +34,14 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: pgc-images.sbgenomics.com
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-
+          username: ${{ secrets.CAVATICA_USERNAME }}
+          password: ${{ secrets.CAVATICA_TOKEN }}
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
           context: .
           push: true
+          provenance: false
           tags: ${{ steps.meta.outputs.tags }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          build-args: github_pat=${{ secrets.GITHUB_TOKEN }}

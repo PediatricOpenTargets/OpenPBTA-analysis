@@ -1,10 +1,6 @@
 FROM rocker/tidyverse:4.4.0
-MAINTAINER rokita@chop.edu
+LABEL maintainer="jrokita@childrensnational.org"
 WORKDIR /rocker-build/
-
-ARG github_pat=$GITHUB_PAT
-
-ENV GITHUB_PAT=$github_pat
 
 # Avoid warnings by switching to noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
@@ -182,7 +178,7 @@ RUN R -e "options(repos = BiocManager::repositories())"
 
 # Install BiocManager and the desired version of Bioconductor
 RUN R -e "install.packages('BiocManager', dependencies=TRUE)"
-RUN R -e "BiocManager::install(version = '3.19')"
+RUN R -e "BiocManager::install(version = '3.19', ask = FALSE)"
 
 # Install R packages
 RUN R -e 'BiocManager::install(c( \
@@ -315,13 +311,12 @@ WORKDIR /home/rstudio/
 # GISTIC installation
 RUN mkdir -p gistic_install && \
     cd gistic_install && \
-    wget -q ftp://ftp.broadinstitute.org/pub/GISTIC2.0/GISTIC_2_0_23.tar.gz && \
-    tar zxf GISTIC_2_0_23.tar.gz && \
-    rm -f GISTIC_2_0_23.tar.gz && \
+    wget -q https://anaconda.org/HCC/gistic2/2.0.23/download/linux-64/gistic2-2.0.23-0.tar.bz2 && \
+    tar jxf gistic2-2.0.23-0.tar.bz2 && \
+    rm -f gistic2-2.0.23-0.tar.bz2 && \
     rm -rf MCR_Installer && \
     chown -R rstudio:rstudio /home/rstudio/gistic_install && \
     chmod 755 /home/rstudio/gistic_install
-WORKDIR /rocker-build/
 
 WORKDIR /home/rstudio/
 # AWS CLI installation
